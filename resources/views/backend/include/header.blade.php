@@ -51,7 +51,10 @@
             </button>
 
             <div class="dropdown-menu dropdown-menu-right mt-3">
-                <a class="dropdown-item" href="#">Sign out</a>
+                <a onclick="event.preventDefault();document.getElementById('logoutForm').submit();" class="dropdown-item" href="#">Sign out</a>
+                <form action="{{route('logout')}}" id="logoutForm" method="post">
+                    @csrf
+                </form>
             </div>
         </div>
     </div>

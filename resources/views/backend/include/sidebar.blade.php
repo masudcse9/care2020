@@ -18,7 +18,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="{{route('backend.operations-dashboard')}}">
                         <i class="icon fa-light fa-share-nodes"></i> <span>Operations Dashboard</span>
                     </a>
                 </li>
@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#Report">
+                    <a href="{{route('backend.report')}}">
                         <i class="icon fa-light fa-chart-pie-simple"></i>
                         <span>Report</span>
                     </a>
@@ -76,7 +76,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{route('backend.template')}}">
                         <span class="d-inline-block">Template</span>
                     </a>
                 </li>
@@ -96,7 +96,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="{{route('backend.mobile-view')}}">
                         <span class="d-inline-block">Mobile View of Schedule</span>
                     </a>
                 </li>
