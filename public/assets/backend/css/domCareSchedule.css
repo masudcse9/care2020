@@ -1,0 +1,2227 @@
+.droppable-card-area {
+	/* max-height: 154px; */
+	overflow-y: auto;
+	overflow-x: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	padding: 1px; 
+}
+
+.droppable-card-area.scheduling {
+	/* max-height: 670px; */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding: 0px; 
+}
+
+.job-parent-div{
+	max-height: 670px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	padding: 1px; 
+}
+
+.padding-1{
+	padding: 1px;
+}
+
+.custom-dom-task-card p {
+	white-space: nowrap;
+	width: 90px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left: 19px;
+	margin-right: 17px;
+	margin-bottom: 2px;
+}
+
+.droppable-card-area li {
+	list-style-type: none;
+}
+
+.custom-dom-task-card {
+	border: 0;
+	text-align: left;
+	border-radius: 4px;
+}
+
+.custom-dom-task-card.scheduling{
+	border: 0;
+	text-align: left;
+	/* padding-left : 5px !important; */
+	border-radius: 4px;
+	width : 100%;
+}
+
+@media ( min-width :480px) and (max-width:768px) {
+	.custom-dom-task-card p {
+		width: 95px;
+	}
+}
+
+.care-task-item {
+	width: 110px;
+}
+
+.toggle-dom-buttons {
+	color: #5780AD;
+	padding: 4px 12px;
+	border: 1px solid #5780AD !important;
+	font-weight: 600 !important;
+}
+
+.toggle-dom-buttons:hover, .cpstatusparentdiv .active {
+	background: #5780AD;
+	color: #fff;
+}
+
+.cpstatusparentdiv .active {
+	color: #fff;
+}
+
+.dom-today-btn {
+	padding: 4px 7px;
+	margin-right: 10px;
+}
+
+.d-flex {
+	display: flex;
+	height: 100%;
+}
+
+.run-name {
+	z-index: 2;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.drop-run-content {
+	height: 25px;
+	width: 25px;
+	border: 1px solid #b2b2b2;
+	position: relative;
+	display: block;
+	justify-content: space-around;
+	top: 0;
+	right: -10px;
+	flex-direction: column;
+	padding: 0.5px;
+	flex-wrap: nowrap;
+}
+
+.count-item {
+	min-height: 10px;
+	width: 95%;
+	background: #7fff70;
+	border: 1px solid #fff;
+}
+
+.run-icon-wrapper {
+	position: absolute;
+	right: 11px;
+	top: 15px;
+}
+
+.pl-0 {
+	padding-left: 0px;
+}
+
+.dom-care-run-droppable {
+	display: flex;
+	min-height: 50px;
+	flex-wrap: wrap;
+	padding-left: 0px;
+}
+
+.dom-card-run-area .custom-dom-task-parent-div {
+	margin-right: 18px;
+	width: 94px;
+	padding-left: 9px;
+}
+
+.custom-dom-run-task-div {
+	margin-right: 0px !important;
+	width: 120px !important;
+	padding-left: 9px !important;
+}
+
+.dom-card-run-area.custom-dom-task-parent-div.scheduling {
+	margin-right: 18px;
+	width: 100% !important;
+	padding-left: 9px;
+}
+
+.d-flex-center-items {
+	display: flex;
+	align-items: center;
+}
+
+.runs-header {
+	background: #e6e6e6;
+	padding: 8px 12px;
+}
+
+.dom-filter-button-div{
+	width: 280px;
+}
+
+.resourceSchedulerParentDiv .dhx_timeline_scale_header {
+	border: none;
+}
+
+.domTasksCardParentDiv, .domCarersCardParentDiv{
+	width: 284px !important;
+}
+
+.run-name, .runs-header{
+	width: 208px !important;
+}
+
+.dom-card-run-area{
+	/*width: calc(100% - 208px) !important;	*/
+}
+
+/*.droppableRunArea{*/
+/*	width: calc(100% - 300px) !important;*/
+/*}*/
+
+.domCareDatePickerWidth{
+	width: 208px !important;
+}
+
+.domCareZoneAreaSelectWidth{
+	width: 258px !important;
+}
+
+.domCareZoneAreaSelectWidth > select{
+	font-size: 13px;
+}
+
+.domCareDatePickerWidth{
+	width: 208px !important;
+}
+
+#zoneAreaFilter {
+	background-color: #5780AD !important;
+    border-color: #5780AD !important;
+    color: white;
+}
+
+.domCareZoneAreaSelectWidth > select option {
+  background: white;
+  color: grey;
+}
+
+.domCareZoneAreaSelectWidth  select option:hover {
+    box-shadow: 0 0 10px 100px #5780AD inset;
+}
+
+.resourceSchedulerParentDivWidth{
+	width: calc(100% - 300px) !important;
+}
+
+.clearSchedulingScreenFilterCSS{
+	display: inline-block;
+	font-size: 27px;
+	vertical-align: middle;
+	margin-bottom: 10px !important;
+	line-height: 30px;
+}
+
+.eveningShiftSchedulingScreenFilterIconCSS, .morningShiftSchedulingScreenFilterIconCSS{
+	margin-bottom: 10px !important;
+	cursor: pointer;
+}
+
+
+.schedlungShiftFilterHightLight{
+	border-bottom: 2px solid #5780AD;
+    display: inline-block;
+    line-height: 0.85;
+}
+
+#schedulingScreenShiftFilterDiv1{
+	display: flex;
+	height: 32px;	
+	width: 107px;
+	margin-left: 260px;
+}
+
+.custom-care-run-card p {
+	white-space: nowrap;
+	width: 119px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left: 19px;
+	margin-right: 17px;
+	margin-bottom: 2px;
+}
+
+.custom-dom-task-parent-div {
+	display: flex;
+	margin-bottom: 7px;
+	cursor: grabbing;
+}
+
+.custom-dom-task-parent-div.scheduling{
+	display: flex;
+	margin-bottom: 0px;
+	cursor: grabbing;
+	width : 100%
+}
+
+.after-draggable-resize{
+	width : 200px;	
+}
+
+
+.custom-care-run-card {
+	border: 0;
+	text-align: center;
+}
+
+.dom-card-run-area li {
+	list-style-type: none;
+}
+
+.border-red {
+	border: 3px solid #ec4444;
+}
+
+.border-red-holiday{
+	border: 1.5px solid #ec4444;
+}
+
+.border-blue {
+	border: 0.5px solid #04F;
+}
+
+.border-regular {
+	border: 0.5px solid #ffc870;
+}
+
+.dom-care-run-droppable {
+	display: flex;
+	min-height: 50px;
+	flex-wrap: wrap;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.runs-expandable-content {
+	background: #e6e6e6;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 9px;
+	padding-left: 0;
+	padding-bottom: 4px;
+}
+
+.career-name-content {
+	display: block;
+	padding-left: 18px;
+}
+
+.custom-dom-task-card p {
+	width: 95px !important;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.custom-dom-task-card.scheduling p {
+	width: 100% !important;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+@media ( min-width :480px) and (max-width:768px) {
+	.custom-care-run-card p {
+		width: 164px;
+	}
+}
+
+.carer-count {
+	background-color: #6DC2AF;
+	color: #fff;
+	text-align: center;
+}
+
+
+.user-icon-img {
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	left: 16px;
+	bottom: 0;
+	border-radius: 50%;
+}
+
+.carer-card-img {
+	height: 38px;
+	width: 38px;
+	left: 16px;
+	border-radius: 50%;
+}
+
+.job-card-img {
+	height: 16px;
+	width: 16px;
+	left: 16px;
+	border-radius: 50%;
+}
+
+.droppable-card-area li {
+	width: 109px;
+}
+
+.droppable-card-area.scheduling li {
+	width: 100% !important;
+}
+
+.full-width{
+	width: 100% !important;
+}
+
+.text-white {
+	color: #fff;
+}
+
+/* Scheduling css*/
+.portlet-placeholder {
+	border: 1px dotted black;
+	margin: 0 1em 1em 0;
+	height: 50px;
+	width: 10%;
+	list-style-type: none;
+}
+
+.highlight {
+	background-color: #7ACCBE;
+}
+
+@media ( min-width :481px) and (max-width:1024px) {
+	.run-icon-wrapper {
+		right: 4px !important;
+	}
+	.career-name-content {
+		white-space: pre-wrap;
+	}
+}
+
+#completeDiv div div.domCard ul li {
+	border-radius: 0;
+	color: #6f6f6f;
+	border-width: 0;
+	padding: 1.5px 0px;
+}
+
+#completeDiv{
+	height: 1800px;
+}
+
+span.select2 .selection .select2-selection {
+	border-radius: 0px;
+	border: 2px solid #eaeaea;
+	padding: 6.4px 10px;
+}
+
+.select2 .select2-container .select2-container--default .select2-container--below{
+	padding-left: 15px;
+}
+
+#resourceFilters div span.select2 .select2-container {
+	width: 100%;
+	padding-left: 10px;
+}
+
+.roasterDateTimePicker {
+	margin-left: 5%;
+	width: 95%;
+}
+
+.droppableArea .droppable .droppable-card-area .ui-sortable {
+	min-height: 170px;
+}
+
+.select2 .select2-container .select2-container--default {
+	width: 99.58%;
+}
+
+span.select2 span.selection .select2-selection--multiple {
+	padding: 6.88px 12px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+	border-radius: 0px;
+	cursor: default;
+	float: left;
+	border: none;
+	padding: 0px 6px 2px 7px;
+}
+
+.float-right {
+	float: right !important;
+	margin: 0px !important;
+}
+
+.filter-button {
+	background-color: #5780AD !important;
+	border-color: #5780AD !important;
+	width: 150px;
+}
+
+.margin-bottom {
+	margin-bottom: 10px;
+}
+
+.no-padding-top {
+	padding-top: 0px !important;
+}
+
+.job-filter-buttons {
+	padding-top: 8px;
+	text-align: right;
+}
+
+.job-filter-buttons {
+	margin-top: 8px;
+	text-align: right;
+}
+
+.margin-right {
+	margin-right: 10px;
+}
+
+.content-right {
+	text-align: right !important;
+}
+
+.header-button {
+	background-color:  #5780AD  !important;
+	border-color:  #5780AD ;
+	width: 150px;
+}
+
+.btn.header-button-dull {
+    background-color: white !important;
+    color:#5780AD; 
+    padding: 3px;
+    padding-inline: 5px;
+}
+
+
+.header-button-div {
+	text-align: right;
+}
+
+.margin-right {
+	margin-right: 15px;
+}
+
+.dom-scheduler-h-400 {
+	width: 100%;
+	height: 900px !important;
+}
+
+.dom-scheduler-h-1300 {
+	width: 100%;
+	height: 615px !important;
+}
+
+.dom-scheduler-h-200 {
+	width: 100%;
+	height: 200px !important;
+}
+
+.padding-8 {
+	padding: 8px !important
+}
+
+.carer-filter-buttons {
+	margin-top: 8px;
+	text-align: right;
+}
+
+.close-carer-popover, .close-job-popover {
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+}
+
+.margin-top-dom-cares-modal-label {
+	margin-top: 10px;
+}
+
+.custom-checkbox-size-span {
+	cursor: pointer;
+}
+
+.custom-checkbox-size-span::before {
+	width: 27px !important;
+	height: 27px !important;
+}
+
+.custom-control .custom-control-label:before {
+	border-color: #5780ad !important;
+}
+
+.custom-checkbox-size-span::after {
+	padding-top: 0px !important;
+	padding-left: 3px !important;
+	font-size: 21px !important;
+}
+
+.custom-control {
+	min-height: 1.692rem;
+	min-width: 1.692rem;
+	margin-bottom: 1.077rem;
+	margin-top: .5385rem;
+}
+
+.custom-control-inline {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	margin-right: 1.385rem;
+}
+
+.custom-control {
+	position: relative;
+	display: block;
+	min-height: 1.428571rem;
+	padding-left: 2.192rem;
+}
+
+.custom-control-input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.custom-control .custom-control-label {
+	position: unset;
+	line-height: 22px;
+}
+
+.custom-control-label {
+	position: relative;
+	margin-bottom: 0;
+	vertical-align: top;
+}
+
+.custom-control .custom-control-label:after, .custom-control .custom-control-label:before{
+	left: 0;
+	top: 0;
+}
+
+.custom-control-label::after {
+	position: absolute;
+	top: -.131714rem;
+	left: -2.192rem;
+	display: block;
+	width: 1.692rem;
+	height: 1.692rem;
+	content: "";
+	background: no-repeat 50%/50% 50%;
+}
+
+.custom-checkbox .custom-control-label::before {
+	border: 2px solid #eaeaea;
+	content: "";
+}
+
+.custom-control .custom-control-label:after, .custom-control .custom-control-label:before{
+	left: 0;
+	top: 0;
+}
+
+.custom-checkbox .custom-control-label::before {
+	border-radius: 0;
+}
+
+.custom-control-label::before, .custom-file-label, .custom-select {
+	-webkit-transition: none;
+	transition: none;
+}
+
+.custom-control-label::before {
+	position: absolute;
+	top: -.131714rem;
+	left: -2.192rem;
+	display: block;
+	width: 1.692rem;
+	height: 1.692rem;
+	pointer-events: none;
+	content: "";
+	background-color: #fff;
+	border: #adb5bd solid 2px;
+}
+
+.custom-control-input:checked ~.custom-control-label::before {
+	color: #EF6262;
+	border-color: #EF6262;
+	background-color: #fff;
+}
+
+.custom-checkbox .custom-control-input:checked ~.custom-control-label::after
+	{
+	content: "\e6ca";
+	font-family: "Stroke 7";
+	font-size: 1.3843rem;
+	font-weight: 600;
+	text-align: center;
+	line-height: 1.3;
+}
+
+.custom-checkbox .custom-control-input:checked ~.custom-control-label::after{
+	background-image: none;
+}
+
+.custom-control-input:checked ~.custom-control-label::after {
+	color: #EF6262;
+}
+
+.margin-bottom-15 {
+	margin-bottom: 15px !important;
+	margin-top: 12px;
+}
+
+.domCareDateTimePicker {
+	width: 120px !important;
+}
+
+.run-button {
+	font-size: 13px !important;
+	height: 26px;
+	font-weight: 600 !important;
+}
+
+.margin-bottom-16 {
+	margin-bottom: 16px;
+}
+
+.margin-bottom-18 {
+	margin-bottom: 18px;
+}
+
+#domRunTaskDetailsParentDiv{
+	max-height: 670px !important;
+	overflow-y: scroll;
+	margin-bottom: 0px;
+	outline-color: #5780AD;
+}
+
+.domRunTaskTemplateDetailsParentDiv{
+	max-height: 670px !important;
+	overflow-y: scroll;
+	margin-bottom: 0px;
+}
+
+.droppableRunArea{
+	margin-bottom: 0px;
+}
+
+
+.overlap_event, .overlap_event div {
+	background-color: #ec4444 !important;
+	color: #555555 !important;
+}
+
+.first-row-cls {
+	padding-top: 0px;
+	margin-top: -10px;
+}
+
+.notfirst-row {
+	padding-top: 12px;
+}
+
+.timeduration-padding-top {
+	padding-top: 10px;
+}
+
+.customer-modal-photo {
+	height: 60px;
+}
+
+.customer-ok-button-css {
+	color: #9699ff;
+	border-color: #ccc;
+}
+
+/* do not remove*/
+.dom-task-cancelled {
+	background: linear-gradient(to bottom left, var(--background-color) calc(50% - 2px), #ec4444 20% 50%, var(--background-color) calc(50% + 2px) );
+}
+
+.dom-task-outstanding {
+	background: repeating-linear-gradient(45deg, var(--background-color),
+		var(--background-color) 13px, #ffffff 16px, #9c958366 19px);
+}
+
+.dom-task-partially-completed {
+	background: repeating-linear-gradient(45deg, #bab7b7, var(--background-color) 8px, #837f7f 16px, #938f8266 16px);
+}
+
+.dom-task-regular {
+	background: var(--background-color) !important;
+}
+
+.lighter-carer-name{
+	color : #5555559e
+}
+
+.unallocate-resource-name-font{
+	font-size: 13px;
+}
+
+.completed-timeline-event{
+	background : #a9a9a9;
+}
+
+.unallocate-resource-modal{
+ 	max-width : 250px;
+}
+
+.allocate-resource-modal{
+ 	max-width : 250px;
+}
+
+.week-cycle-css{
+	font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 2px;
+    vertical-align: super;
+}
+
+.dom-background-css{
+	background-color:  #5780AD  !important;
+	border-color:  #5780AD !important;
+}
+
+.dark-bank-holiday{
+  background: #be1b4c;
+  color: #be1b4c;
+  height:100% !important;
+}
+
+.margin-top-10{
+ 	margin-top:10px
+}
+
+.top-15{
+	top: 15px;
+}
+
+.margin-bottom-10{
+	margin-bottom:10px
+}
+
+.margin-left-10{
+	margin-left:10px
+}
+
+.content-left{
+	text-align :left;
+}
+
+.font-20{
+	font-size : 20px
+}
+
+
+.float-left{
+	float : left !important;
+}
+
+.border-top-allocation-modal{
+   border-top: 2px solid #928c8c69;
+   padding-bottom : 2px;
+}
+
+.border-top-allocation-button{
+   border-top: 3px solid #928c8c;
+}
+
+.margin-right-cancel-allocation{
+	margin-left : 270px;	
+}
+
+.padding-top-10{
+	padding-top : 10px !important;
+}
+
+.padding-left-10{
+	padding-left : 10px !important;
+}
+
+.padding-bottom-10{
+	padding-bottom : 10px !important;
+}
+
+ul.a {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.margin-right-10{
+	margin-right: 10px !important;
+}
+
+.padding-left-10{
+	padding-left : 10px !important;
+}
+
+.width-30-percent{
+	width : 30%;
+}
+
+.width-40-percent{
+	width : 40%;
+}
+
+.width-10-percent{
+	width : 10%;
+}
+
+.dom-blue-color{
+	border: solid 1px #5780AD !important;
+	color: #5780AD !important;
+}
+
+a.dom-dropdown{
+	font-weight: 350 !important;
+}
+
+.dom-dropdown:hover , .dom-today-btn:hover {
+	background: #5780ad !important;
+	color: #fff !important;
+}
+
+.job-div{
+	max-height: 245px;
+	min-height:20px;
+}
+
+.schedule-job-div{
+	/* max-height: 670px;
+	max-height: 746px; */
+	min-height:20px;
+}
+
+.run-css{
+	min-height: 75px; 
+	margin-bottom: 5px !important;
+}
+
+.run-type-css {
+	height: 30px;
+	width: 30px;
+}
+
+.run-type-carer-name-css {
+	height: 25px !important;
+	width: 25px !important;
+}
+
+.border-top {
+  border-top : 1px solid #cecece;
+}
+
+.border-bottom {
+  border-bottom  : 1px solid #cecece;
+}
+
+.border-left-2 {
+  border-left  : 2px solid #cecece;
+}
+
+.user_role {
+	width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #7ACCBE;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    font-size: 14px !important;
+    line-height: 24px;
+    bottom: 10px;
+}
+
+.contracted-hours-css{
+	padding-left: 30px ;
+}
+
+
+.dom-res-name-ellipse-shift-staff{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 55%;
+    display: inline-block;
+    text-align : left !important;
+    text-indent:0px !important;
+    vertical-align : middle;
+}
+
+.line-height-15{
+	line-height : 15px;
+}
+
+.width-5-perc{
+	width : 5% ;
+}
+
+.width-10-perc{
+	width : 10%;
+}
+
+.width-15-perc{
+	width : 15%;
+}
+
+.dummy-space-div{
+ 	height : 575px;
+}
+
+.dummy-job-carer-space-div{
+	height : 620px;
+}
+
+.inprogress-job{
+ 	background-image: linear-gradient(
+ 	135deg, #9e9e9e 30.56%, #707375 30.56%, 
+ 	#707375 50%, #9e9e9e 50%, #9e9e9e 80.56%, 
+ 	#707375 80.56%, #707375 100%);
+	background-size: 25.46px 25.46px;
+}
+
+
+.font-size-15{
+	font-size: 15px;
+}
+
+.font-size-24{
+	font-size: 24px;
+}
+
+.theme-color{
+ 	color: #ec4444
+ }
+ 
+.run-parent-div.tooltip.tooltip-inner {
+  width: 7em;
+  white-space: normal;
+}
+
+.add-new-run-icon {
+    font-size: 15px !important;
+    border-radius: 50% !important;
+    width: 24px;
+    height: 24px;
+    padding-left: 6px;
+    padding-top: 5px;
+    color: #fff;
+    background: #5780ad;
+	line-height: 15px;
+}
+
+.width-20{
+	width : 20%;
+}
+
+.dom-template-trash-icon{
+	font-size: 25px;
+    color: #EF6262;
+    margin-left:19px; 
+}
+
+.stop-right-resize .dhx_event_resize_end {
+     display:none;
+}
+
+.stop-left-resize .dhx_event_resize_start {
+     display:none;
+}
+
+/* .dom-task-modal-content{
+	max-width: 55%;
+}
+
+@media ( min-width :768px) and (max-width:1366px) {
+  .dom-task-modal-content{
+	max-width: 97%;
+  }
+} */
+
+
+/* do not remove*/
+
+.max-width-85{
+	max-width:85% !important;
+}
+
+.dark-blue-theme{
+	background-color:#466a8e;
+}
+
+/*custome blue checkbox css start*/
+.custom-checkbox-size-span-risk {
+	cursor: pointer;
+}
+.custom-checkbox-size-span-risk::before {
+	width: 27px !important;
+	height: 27px !important;
+}
+.custom-checkbox-size-span-risk::after {
+	padding-top: 0px !important;
+	padding-left: 3px !important;
+	font-size: 21px !important;
+}
+
+.save-border, .custom-control-risk .custom-control-label-risk:before {
+	border-color: #5780AD  !important;
+}
+
+.custom-control-risk {
+	min-height: 1.692rem;
+	min-width: 1.692rem;
+	margin-bottom: 1.077rem;
+	margin-top: .5385rem;
+}
+
+.custom-control-inline {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	margin-right: 1.385rem;
+}
+
+.custom-control-risk {
+	position: relative;
+	display: block;
+	min-height: 1.428571rem;
+	padding-left: 2.192rem;
+}
+
+.custom-control-input-risk {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.custom-control-risk .custom-control-label-risk {
+	position: unset;
+	line-height: 22px;
+}
+
+.custom-control-label-risk {
+	position: relative;
+	margin-bottom: 0;
+	vertical-align: top;
+}
+
+.custom-control-risk .custom-control-label-risk:after, .custom-control-risk .custom-control-label-risk:before{
+	left: 0;
+	top: 0;
+}
+
+.custom-control-label-risk::after {
+	position: absolute;
+	top: -.131714rem;
+	left: -2.192rem;
+	display: block;
+	width: 1.692rem;
+	height: 1.692rem;
+	content: "";
+	background: no-repeat 50%/50% 50%;
+}
+
+.custom-checkbox-risk .custom-control-label-risk::before {
+	border: 2px solid #5780AD !important;
+	content: "";
+}
+.custom-checkbox-risk .custom-control-label-risk::before {
+	border-radius: 0;
+}
+
+.custom-control-label-risk::before {
+	-webkit-transition: none;
+	transition: none;
+}
+
+.custom-control-label-risk::before {
+	position: absolute;
+	top: -.131714rem;
+	left: -2.192rem;
+	display: block;
+	width: 1.692rem;
+	height: 1.692rem;
+	pointer-events: none;
+	content: "";
+	background-color: #fff;
+	border: #adb5bd solid 2px;
+}
+
+.custom-control-input-risk:checked ~.custom-control-label-risk::before {
+	color: #5780AD  !important;
+	border-color: #5780AD  !important;
+	background-color: #fff;
+}
+
+.custom-checkbox-risk .custom-control-input-risk:checked ~.custom-control-label-risk::after
+	{
+	content: "\e6ca";
+	font-family: "Stroke 7";
+	font-size: 1.3843rem;
+	font-weight: 600;
+	text-align: center;
+	line-height: 1.3;
+}
+
+.custom-checkbox-risk .custom-control-input-risk:checked ~.custom-control-label-risk::after{
+	background-image: none;
+}
+
+.custom-control-input-risk:checked ~.custom-control-label-risk::after {
+	color: #5780AD  !important;
+}
+ /*custome blue checkbox css end*/
+.rule-breakers-carer{
+ 	color: rgb(239, 98, 98);
+    font-weight: 500;
+    padding: 8px 0px 0px 0px;
+}
+.non-rule-breakers-carer{
+	color: rgb(104, 197, 181);
+    font-weight: 500;
+    padding: 8px 0px 0px 0px;
+}
+
+.rule-breakers-header{
+    font-weight: 600;
+}
+
+.text-gray{
+	color: #808080 !important;
+}
+
+.actual-working-hour-text-blue{
+ 	color: #1155cc !important;
+ }
+ 
+.scheduled-working-hour-text-green{
+ 	color: #1e800e !important;
+ }
+
+.working-hour-text-grey{
+	color: #767676ab !important;
+}
+ 
+.retro-build-template label:before {
+	content: "Add New Template" !important;
+}
+
+.retro-build-template input[type="checkbox"]:checked + span label:before {
+	content: "Rebuild selected" !important;
+}
+
+.retro-build-width{
+	width: 71%;
+	padding-left: 1px;
+}
+
+.dhx_matrix_line{
+   overflow:visible;
+}
+
+.disabled.twoweeklist {
+    pointer-events:none; 
+    opacity:0.6;
+}
+ #inlineJobNotes, #cancellationReason{
+ 	overflow: hidden;
+ }
+ 
+.text-carer-run-name{
+	font-weight : bold;
+	position:absolute;
+    line-height: 15px;
+    display: inline-block;
+    text-indent: 2px;
+}
+.span-next-line{
+	position:absolute;
+	line-height: 12px;
+	display: inline-block;
+	color:#767676;
+	font-size:11px;
+	text-indent: 2px;
+}
+.dom-schedule-btn {
+	padding: 4px 12px;
+}
+.addRun {
+	float: left;
+    padding: 4px 10px;
+}
+
+.greenJobColor input[type="checkbox"] + label:before  {
+	background: #68ff4f !important;
+}
+
+.yellowJobColor input[type="checkbox"] + label:before  {
+	background: #ffcf66 !important;
+}
+
+a.dom-view-dropdown{
+	font-weight: 350 !important;
+}
+.font-black{
+	color: #504e4e !important;
+}
+.font-float-right{
+	float: right;
+}
+.dom-view-dropdown:hover {
+	background: transparent !important;
+	color: #5780ad !important;
+}
+.dom-view-padding-10{
+	padding: 0px 0px 0px 10px !important;
+}
+.dropdown-dom-view-button{
+    width: 200px !important;
+    float: right;
+}
+.button-dom-view{
+	height: 38px !important;
+}
+.view-lbl-tooltip{
+	font-weight: 600;
+	color: #5780ad !important;
+}
+.dropdown-dom-template-view-button {
+    width: 250px !important;
+    float: right;
+}
+
+.domCareTemplateZoneAreaSelectWidth{
+	width: 267px !important;
+}
+
+.domCareTemplateZoneAreaSelectWidth > select{
+	font-size: 13px;
+}
+
+.domCareTemplateZoneAreaSelectWidth > select option {
+  background: white;
+  color: grey;
+}
+
+.saveTemplateTriggerCSS {
+	padding : 10px 1px !important;
+	width: 112px;
+} 
+#dom-view-button, #domCareTemplateViewBtn, #selectDateButton {
+	text-align: left;
+}
+#dom-view-button .caretSpacing, #domCareTemplateViewBtn .caretSpacing, #selectDateButton .caretSpacing {
+	float: right;
+	margin-top: 5px;
+	margin-left: 0;
+}
+
+.dom-view-dropdown:hover .font-black {
+	color: #ffffff !important;
+	cursor: pointer;
+}
+
+.squaredThree {
+  position: relative;
+  float:left;
+  margin: 10px
+}
+
+.squaredThree label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #D7B1D7;
+  border-radius: 4px; 
+}
+
+.squaredThree label:after {
+  content: '';
+  width: 12px;
+  height: 9px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 3px solid black;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.squaredThree label:hover::after {
+  opacity: 0.3;
+}
+
+.squaredThree input[type=checkbox] {
+  visibility: hidden;
+  width: 20px;
+}
+
+.squaredThree input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+/* end .squaredThree */
+
+#jobCancellationReason{
+	font-size: 13px;
+}
+
+.errorCancellJobReason .parsley-errors-list{width: 100% !important;}
+
+.schedule-progress-chart .chart-container:first-of-type {
+	width: 45%;
+}
+.schedule-progress-chart .chart-container {
+	width: 50%;
+	float: left;
+	height: 50px;
+}
+.domScheduleZone {
+	float: left;width: 100%;padding-left: 25px;
+}
+.schedule-progress-chart {
+	padding-bottom: 10px;
+    border: 1px #ddd solid;
+    height: 75px;
+}
+
+@media (max-width: 768px) {
+	.header-button-div {
+		text-align: left;
+		margin-top: 15px;
+	}
+	.schedule-progress-chart {
+		margin-top: 15px;
+	}
+}
+#jobCancellationReason{
+	font-size: 13px;
+}
+.errorCancellJobReason .parsley-errors-list{width: 100% !important;}
+.light-pink-bg {
+	background-color: #FDEADA !important;
+}
+.dom-task-cancelled-absent {
+	border: 3px solid blue;
+	background: linear-gradient(to bottom left, var(--background-color) calc(50% - 2px), #6B6B6B 40% 51%, var(--background-color) calc(50% + 2px) );
+}
+.blue-theme-pagination div ul.pagination > .active > a, 
+.blue-theme-pagination div ul.pagination > .active > span, 
+.blue-theme-pagination div ul.pagination > .active > a:hover, 
+.blue-theme-pagination div ul.pagination > .active > span:hover, 
+.blue-theme-pagination div ul.pagination > .active > a:focus, 
+.blue-theme-pagination div ul.pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    background-color: #5780AD;
+    border-color: #5780AD !important;
+    cursor: default;
+}
+.blue-theme-pagination div ul.pagination > li > a{
+    position: relative;
+    float: left;
+    padding: 8px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #403636;
+}
+
+#schedulingScreenShiftFilterDiv2{
+	display: inline-flex;
+	width: 65%;
+}
+
+.shift-run-filters{
+	height: 32px;	
+	width: 107px;
+}
+
+.shift-view-filter {
+	height: 40px;
+	/* width: 33%; */
+	display: flex;
+    justify-content: end;
+    padding: 10px;
+    /* border-left: 2px solid #c3bfbf; */
+	height: 32px;	
+	align-items: center;
+}
+
+.squared-box-filter {
+	height: 20px;
+	width: 20px;
+	border: 0.1px solid black;
+	margin: 3px;
+	opacity: 0.2;
+}
+
+.squared-box-filter:hover {
+	opacity: 0.8;
+}
+
+.squared-box-filter-highlight {
+	opacity: 0.8;
+}
+
+.squared-box-filter-blur {
+	opacity: 0.2;
+}
+
+#shift-view-filter1{
+	display: flex;
+	margin-top: 0px;
+	/* margin-left: 15.2%; */
+	margin-left: 70px;
+}
+
+#shift-view-filter1 .shift-view-filter-div1{
+	float: right;
+}
+
+
+#carer-allocation-modal{
+	max-width: 690px;
+	background-color:white !important;
+}
+
+.shift-view-rule-breakers-carer{
+ 	color: #ff8c00;
+    font-weight: 500;
+    padding: 8px 0px 0px 0px;
+}
+.shift-view-non-rule-breakers-carer{
+    font-weight: 500;
+    padding: 8px 0px 0px 0px;
+}
+
+.carerDayTimeline-filter-btn-div {
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 490px;
+}
+
+.dom-filter-btn-custom-div{	display: contents;width:540px;}
+
+.carer-amber {color: #ffc870;}
+
+.carer-amber {
+	color: #ffc870;
+}
+
+#shift-view-template-filter1{
+	display: inline-block;
+	margin-top: 0px;
+	/* margin-left: 15.2%; */
+}
+
+.shift-view-template-filter {
+	height: 40px;
+	/* width: 33%; */
+	display: flex;
+    justify-content: end;
+    padding: 10px;
+/*     border-left: 2px solid #c3bfbf; */
+	height: 31px;	
+	align-items: center;
+}
+#schedulingScreenShiftTemplateFilterDiv2{
+	display: inline-flex;
+	width: 65%;
+}
+#schedulingScreenShiftTemplateFilterDiv1{
+	margin-left: 536px;
+    display: inline-block;
+    height: 32px;
+    width: 107px;
+}
+
+.selected-task-card {border: 2px solid #479035 !important;}
+
+.partially-allocated-carer {border: 3px solid red !important;}
+
+.job-check-mark {
+	float: right;
+	margin-right: 18px;
+	color: white;
+	font-size: 20px;
+	-webkit-text-fill-color: white;
+   	-webkit-text-stroke-width: 1px;
+   	-webkit-text-stroke-color: black;
+   	margin-top: -26px;
+}
+.shift-run-template-filters{
+	height: 32px;	
+	width: 107px;
+}
+.border-brown {
+	border: 3px solid #894210e8;
+}
+
+#errorPostCodeFilterInput{width: 100% !important;}
+
+.dhtmlXTooltip.tooltip {width: 220px;}
+
+#allocation-warn-message{text-align: left; padding-left: 20px;}
+
+.padding-left-18 {padding-left: 18px;}
+
+.margin-left-12{
+	margin-left: 12px;
+}
+.carer-shifts {
+	height: 40px;
+	display: flex;
+    justify-content: end;
+    padding-left: 10px;
+	height: 20px;	
+	align-items: center;
+}
+
+.carer-shift-squared-box {
+	height: 14px;
+	width: 14px;
+	margin: 3px;
+	border-radius: 2px;
+}
+
+.black-timeline-font-color{
+	color: black !important;
+}
+.thick-border-red {
+    border: 5px solid #ec4444;
+}
+.thick-border-brown {
+    border: 5px solid #894210e8;
+}
+.thick-border-blue {
+    border: 5px solid #5780AD;
+}
+
+.timeline-partiallyAllocated{
+	border: 2px solid red !important;
+}
+
+.timeline-overAllocatedJob{
+	border: 3px solid #800080 !important;
+}
+
+.timeline-underAllocatedJob{
+	border: 3px solid red !important;
+}
+.canceled-timeline-event {
+	background-image: linear-gradient( to top right, #a9a9a9 calc(52% - 2px), red, #a9a9a9 calc(50% + 2px) );
+}
+.date-header{
+	padding: 5px 10px 1px !important;
+}
+
+.dropdown-menu  .area-template-lbl{
+    padding: 0px 15px !important;
+}
+
+.dom-task-generation-message-css{
+	height: 30px;
+    width: 30px;
+    color: #ec4444;;
+    font-size: 24px;
+    margin-left: 15px;
+    margin-top: 2px;
+    vertical-align: super;
+}
+
+.alert-message-css {
+	height: 30px;
+	width: 30px;
+	color: #ec4444;;
+	font-size: 24px;
+	vertical-align: middle;
+}
+
+#alert-message-schedule-modal{
+	display: inline-block;
+}
+
+.schedulingInProgressDiv{
+	justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    font-size: 35px;
+    line-height: initial;
+    text-align: justify;
+}
+
+.noSchedule-image-css{
+    height: 67px;
+    width: 110px;
+}
+
+.dom-view-dropdown:hover {
+	background-color:  #5780AD !important;
+}
+
+.rota-filter-button-div{
+	width: 700px;
+}
+.rota-client-filter-div {
+	margin-left: -588px !important;
+}
+
+.amber-background{
+   background-color: #ffc870 !important;
+   border-color: #ffc870 !important;
+}
+
+.cancelJobBtnClass{
+	width: 100%;
+}
+
+.modal-body .form-group{
+	padding: 3px 7px !important;	
+}
+
+.icon-refresh {
+    background: #8ac9df;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0px;
+    border-radius: 50%;
+    /* margin-bottom: 10px !important; */
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    padding: 3px 8px 8px 5px !important;
+    font-size: 17px !important;
+}
+
+.switch-button input[type="checkbox"]:checked + span {
+	 background-color: #5780AD !important;
+}
+.switch-button input[type="checkbox"]:checked + span label {
+    float: right;
+    border-color: #5780AD !important;;
+}
+.float-right{
+	float: right;
+}
+.no-padding{
+	padding: 0px 0px 0px 0px;
+}
+
+.past-day-sublist {
+	list-style-type: none;
+	padding-left: 0;
+}
+.dropdown-menu ul > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333333;
+    white-space: nowrap;
+}
+.past-day-sublist-header {
+	font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #c2c1c1 !important;
+    padding: 5px 10px 1px !important;
+    cursor: pointer;
+}
+.past-day-sublist-header:hover{
+	background-color: #5780AD !important;
+}
+
+#rotaWeekCycle{
+	/* padding-left: 43px; */ 
+	font-size: 16px;
+	position: relative;
+    top: -6px;
+}
+
+.rotaWeekCycleDiv{
+	padding-right: 0px
+
+}
+.carerFilterDivWidth {
+	width:300px !important;
+}
+
+.rota-job-card-img  {
+	height: 30px;
+	width: 30px;
+	left: 16px;
+	border-radius: 50%;
+}
+
+/** maintain the css -donot remove**/
+.hidden-lg-div{
+	display: block;
+}
+.visible-lg-div{
+	display: none;
+}
+
+@media screen and (min-width: 1430px) {
+	.hidden-lg-div{
+		display: none;
+	}
+	.visible-lg-div{
+		display: block;
+		/* margin-left: 15px; */
+   		width: 27%;
+   		float: right;
+	}
+	.fast-allocation-content{
+		padding: 0px 0px 0px 0px !important;
+	}
+	.fast-allocation-lbl-content{
+		padding: 0px 5px 5px 0px !important;
+	}
+	#schedulingScreenShiftFilterDiv2 {
+    	width: 48% !important;
+	}
+	.icon-refresh {font-size: 18px !important;}
+}
+
+@media (min-width: 1430px ) and (max-width:1502px) {
+	#schedulingScreenShiftFilterDiv2 {
+    	width: 48% !important;
+	}
+	.icon-refresh {font-size: 18px !important;}
+}
+@media (min-width: 1502px ) and (max-width:1600px) {.visible-lg-div{width: 25%;}}
+@media (min-width: 1601px ) and (max-width:1700px) {.visible-lg-div{width: 23%;}}
+@media (min-width: 1701px ) and (max-width:1802px) {.visible-lg-div{width: 21%;}}
+@media (min-width: 1803px ) and (max-width:1900px) {.visible-lg-div{width: 19%;}}
+
+/** maintain the css -donot remove**/
+
+.unallocated-cancelled-task {
+	background: linear-gradient(to top right, #bdbdbd calc(50% - 1px),
+		#ec4444, #bdbdbd calc(50% + 1px));
+}
+#addNewRun{
+	width: 35px !important;
+}
+
+.holidayOrNCAHeight{
+	height: 26px !important;
+}
+
+
+.schedule-status-day-sublist-header {
+	font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #9b9a9a !important;
+    padding: 5px 10px 1px !important;
+    cursor: pointer;
+}
+.schedule-status-day-sublist-header:hover{
+	background-color: #5780AD !important;
+}
+
+.schedule-day-sublist-scheduleData{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#newdropdown{
+	min-height:3px;
+	max-height:600px;
+	overflow-y:scroll;
+}
+
+#newdropdownScheduleStatus{
+	width :580px;
+	border: 0px ;
+	outline:0px ;
+	box-shadow: none;
+}
+
+#loadMoreButton
+{
+	pointer-events: all;
+}
+
+.schedule-status-modal-height
+{
+	overflow-y:scroll;
+	height:350px;
+	width: 600px;
+    overflow-x: hidden;
+}
+
+.carer-absent{
+	color : #808080 !important;
+}
+
+.carer-on-holiday-div{
+	top : 15px;
+}
+
+.disableAllocationCheck{
+	opacity : 0.6;
+	pointer-events: none;
+}
+.critical-job-circle{
+	margin-right: inherit;
+}
+
+.completed-job-day-timeline-event {
+	--background-color : #bdbdbd;
+}
+
+.timeline-margin-top {
+	margin-top: -15px !important;
+}
+
+.carer-job-timeline-width {
+	width: calc(100% - 284px) !important;
+}
+
+.height-15{
+	height: 15px;
+}
+
+.carer-absent{
+	color : #808080 !important;
+}
+
+.carer-on-holiday-div{
+	top : 15px;
+}
+.pd-b-10{
+	padding-bottom: 7px;
+}
+.disabledDiv {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.btn.header-buttons {
+    background-color: #67626205 !important;
+    color: white;
+    padding: 3px;
+    padding-inline: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #0000006e inset;
+}
+
+.refresh-btn-content{
+	height:40px;
+}
+
+
+.alignHalf{
+	width:50% ! important;
+}
+
+
+#timelineFilters{
+	position: relative;
+    top: -6px;
+}
+
+.fast1div {
+	min-width: 252px ! important;
+	align-items: baseline;
+}
+
+.fast2div{
+	min-width: 290px ! important;
+}
+
+@media (min-width: 1440px ){
+	.filtering-div{
+		width:64% ! important;
+	}
+}
+
+#shift_previous_hour , #shift_next_hour{
+	width:15px ! important;
+}
+
+.clearSchedulingScreenFilterCSS1{
+	display: inline-block;
+	font-size: 27px;
+	vertical-align: middle;
+	margin-bottom: 10px !important;
+	position:relative;
+	top:-6px;
+}
+
+#carer-allocation-modal .modal-body{
+	max-height: 500px;
+	overflow-y:auto; 
+}
+
+.allocation-modal-carer-list{
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
+#md-allocateMultipleCarer .modal-content .modal-header{
+    background-color: transparent;
+}
+
+#allocatedCarerDiv{
+	min-height:75px;
+}
+
+@media (max-width: 768px) {
+	#carer-allocation-modal .modal-body{
+	max-height: 400px;
+	overflow-y:auto; 
+	}
+}
+@media (max-width: 360px) {
+	#carer-allocation-modal .modal-body{
+		max-height: 350px;
+		overflow-y:auto; 
+	}
+}
+.icon-geofence-red{
+	color: red;
+}
+.icon-geofence-grey{
+	color: grey;
+}
+.icon-geofence-green{
+	color: green;
+}
+.manageIcons {
+	top: 3px;
+}
+.manageIcons {
+	font-size: 21px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.custom-dom-task-card {
+	padding: 2px;
+}
+
+.nav-tabs {
+	background-color: #f5f5f5;
+	border-bottom-width: 0;
+}
+.nav-tabs {
+	border-bottom: 0;
+}
+
+.nav-tabs > li {
+	margin-right: 2px;
+}
+.nav-tabs > li {
+	padding: 18px 15px;
+	margin-right: 0;
+	min-width: 80px;
+	text-align: center;
+	border-radius: 0;
+	color: #555555;
+	border-width: 0;
+	margin-bottom: 0;
+}
+.nav-tabs > li a{
+	font-size: 16px;
+	font-weight: bold;
+}
+.nav-tabs > li.active a, .nav-tabs > li.active a:hover, .nav-tabs > li.active a:focus {
+	background-color: #ffffff;
+	color: #555555;
+}
+.nav-tabs > li.active {
+	position: relative;
+	background: #fff;
+	color: #EF6262;
+}
+.btn-xsmall, .btn-group-xsmall {
+	font-size: 11px;
+	padding: 2px 3px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+.run-allcated-job.card {
+	margin-bottom: 10px;
+}
+.dom-task-cancelled-absent {
+	background: linear-gradient(to bottom left, var(--background-color) calc(50% - 2px), #6B6B6B 40% 51%, var(--background-color) calc(50% + 2px) );
+	border: 3px solid blue;
+}
+
+.alert {
+	line-height: 14px;
+	margin-bottom: 8px;
+}
+.alert-icon {
+	background-color: #ffffff;
+	border: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+}
+.alert-icon > .icon {
+	display: table-cell;
+	width: 55px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: default;
+}
+.alert-icon.alert-missed-medication > .icon {
+	background-color: #7851a9;
+	color: #fff;
+}
+.icon.icon-width {
+	width: 48px !important;
+}
+.red-flag {
+	color: #EF6262;
+}
+.alert-icon > .icon:after {
+	position: absolute;
+	margin-left: 54px;
+	top: 50%;
+	margin-top: -11px;
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	-moz-transform: scale(0.9999);
+	border-top: 11px solid transparent;
+	border-bottom: 11px solid transparent;
+	border-left: 11px solid #ffffff;
+}
+.alert-icon.alert-warning > .icon:after {
+	border-left-color: #FFC870;
+}
+.icon.icon-width:after {
+	margin-left: 48px !important;
+}
+.parentManagerAlertDiv {
+	position: relative;
+	height: 332px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.managerAlertDiv {
+	height: 332px;
+}
+.alert-icon.alert-missed-medication > .icon:after {
+	border-left-color: #7851a9;
+}
+.alert-icon.alert-warning > .icon {
+	background-color: #FFC870;
+}
+.alert-icon.alert-warning > .icon:after {
+	border-left-color: #FFC870;
+}
+.alert-icon>.message {
+	display: table-cell;
+	padding: 15px;
+	color: #555555;
+	border: 1px solid #d4d4d4;
+	border-left-width: 0;
+}
+.alertMessgae {
+	padding: 5px 0 5px 13px !important;
+}
+.alert .message > p, .alert .message > ul {
+	margin-bottom: 0;
+}
+.icon.icon-width span {
+	font-size: 21px;
+}
+.widget > .widget-head .title {
+	font-size: 16px;
+}
+
+.child {
+	box-sizing: border-box;
+	display: inline-block;
+	position: relative;
+	margin-right: 14px;
+}
+.todayTeamDivMargin {
+	margin-top: 20px;
+}
+.todayTeam-child-margin {
+	margin-right: 5px !important;
+}
+.parentShiftDiv img {
+	height: 60px;
+	width: 60px;
+}
+.carerPhoto {
+	border-radius: 50%;
+	border: 3px solid #fff;
+}
+
+.todayTeam-footer-content {
+	position: absolute;
+	top: 45px;
+	width: 100%;
+	color: #fff;
+	border: 1px solid;
+}
+.logout {
+	background: #d1d1d1;
+}
+
+.todayTeam-footer-content p {
+	font-size: 11px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 0;
+	text-align: center;
+	line-height: 16px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.total-content {
+	position: relative;
+	height: 332px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.progress-item-content {
+	position: relative;
+	height: 325px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.login {
+	background: #6DC2AF;
+}
