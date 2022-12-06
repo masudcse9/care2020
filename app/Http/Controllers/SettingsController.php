@@ -3,16 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Interfaces\CommonInterface;
-use App\Models\Common;
 use App\Repository\CommonRepository;
 use Illuminate\Http\Request;
 
-class CommonController extends Controller
+class SettingsController extends Controller
 {
-    private $commonRepository;
     private $commonInterface;
+    private $commonRepository;
 
-    public function __construct(CommonRepository $commonRepository, CommonInterface $commonInterface)
+    public function __construct(CommonInterface $commonInterface, CommonRepository $commonRepository)
     {
         $this->commonInterface = $commonInterface;
         $this->commonRepository = $commonRepository;
@@ -24,8 +23,7 @@ class CommonController extends Controller
      */
     public function index()
     {
-        $common = Common::all();
-        return $this->commonInterface->indexWithPagination($common, 10);
+        //
     }
 
     /**
@@ -46,7 +44,20 @@ class CommonController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'url' => 'required'
+        ]);
+
+
+        $items = $request->except([
+            //
+        ]);
+
+        foreach ($items as $key => $item) {
+            $this->commonInterface->updateSettings($key, $item);
+        }
+
+        return 'Settings Saved Successfully';
     }
 
     /**

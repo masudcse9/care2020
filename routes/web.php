@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -23,3 +24,5 @@ Auth::routes();
 Route::get('/home', function(){
     return redirect()->route('backend.dashboard');
 })->name('home');
+
+Route::resource('settings', SettingsController::class);
