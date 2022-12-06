@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Common extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['name'];
 }

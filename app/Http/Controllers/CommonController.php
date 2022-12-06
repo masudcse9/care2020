@@ -11,11 +11,13 @@ class CommonController extends Controller
 {
     private $commonRepository;
     private $commonInterface;
+    private $common;
 
-    public function __construct(CommonRepository $commonRepository, CommonInterface $commonInterface)
+    public function __construct(CommonRepository $commonRepository, CommonInterface $commonInterface, Common $common)
     {
         $this->commonInterface = $commonInterface;
         $this->commonRepository = $commonRepository;
+        $this->common = $common;
     }
     /**
      * Display a listing of the resource.
@@ -24,8 +26,7 @@ class CommonController extends Controller
      */
     public function index()
     {
-        $common = Common::all();
-        return $this->commonInterface->indexWithPagination($common, 10);
+        return $this->commonInterface->indexWithPagination($this->common , 10);
     }
 
     /**
@@ -46,7 +47,7 @@ class CommonController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $this->commonInterface->commonStore($this->common,$request);
     }
 
     /**
