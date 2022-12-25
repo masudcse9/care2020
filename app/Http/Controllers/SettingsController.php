@@ -23,7 +23,7 @@ class SettingsController extends Controller
      */
     public function index()
     {
-        //
+        return view('backend.Setttings.settings');
     }
 
     /**
@@ -45,12 +45,12 @@ class SettingsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'url' => 'required'
+            // 'url' => 'required'
         ]);
 
 
         $items = $request->except([
-            //
+            '_token'
         ]);
 
         foreach ($items as $key => $item) {

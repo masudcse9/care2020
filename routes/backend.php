@@ -9,6 +9,7 @@ use App\Http\Controllers\Backend\ReportController;
 use App\Http\Controllers\Backend\ScheduleListController;
 use App\Http\Controllers\Backend\ServiceUserController;
 use App\Http\Controllers\Backend\TemplateController;
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -33,6 +34,10 @@ Route::prefix('backend')->name('backend.')->group(function(){
     Route::get('schedule-list',[ScheduleListController::class,'index'])->name('schedule-list');
     //mobile-view
     Route::get('/mobile-view',[MobileViewController::class,'index'])->name('mobile-view');
+
+    //Settings Module
+    Route::get('settings', [SettingsController::class, 'index'])->name('GetSettings');
+    Route::post('save_settings', [SettingsController::class, 'store'])->name('saveSettings');
     //==================================================================================================================
 
 
