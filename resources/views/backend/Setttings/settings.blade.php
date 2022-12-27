@@ -34,15 +34,24 @@
         </thead>
         <tbody>
             <tr>
-                <th scope="row" class="text-center">What is Setting</th>
+                <th scope="row" class="text-center">Review care plan after</th>
                 <td class="text-center">
-                    <input type="text" name="company_name" id="">
+                    <input type="text" name="reviewDays" id="">
                 </td>
             </tr>
             <tr>
-                <th scope="row" class="text-center">What is what</th>
+                <th scope="row" class="text-center">Handover report for last</th>
                 <td class="text-center">
-                    <input type="text" name="company_profile" id="">
+                    <input type="text" name="handoverExtraHours" id="">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-center">Show regular actions in daily action list?</th>
+                <td class="text-center">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
                 </td>
             </tr>
         </tbody>

@@ -1,28 +1,24 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 
+use App\Http\Controllers\Controller;
 use App\Interfaces\CommonInterface;
 use App\Models\CompanyInfo;
-use App\Models\Settings;
 use App\Repository\CommonRepository;
 use Illuminate\Http\Request;
 
-class SettingsController extends Controller
+class CompanyInfoController extends Controller
 {
     private $commonInterface;
     private $commonRepository;
-    private $settings;
+    private $company_info;
 
-    public function __construct(
-        CommonInterface $commonInterface, 
-        CommonRepository $commonRepository,
-        Settings $settings
-    )
+    public function __construct(CommonInterface $commonInterface,CommonRepository $commonRepository,CompanyInfo $company_info)
     {
         $this->commonInterface = $commonInterface;
         $this->commonRepository = $commonRepository;
-        $this->settings = $settings;
+        $this->company_info = $company_info;
     }
     /**
      * Display a listing of the resource.
@@ -31,7 +27,7 @@ class SettingsController extends Controller
      */
     public function index()
     {
-        return view('backend.Setttings.settings');
+        //
     }
 
     /**
@@ -62,7 +58,7 @@ class SettingsController extends Controller
         ]);
 
         foreach ($items as $key => $item) {
-            $this->commonInterface->updateSettings($this->settings,$key, $item);
+            $this->commonInterface->updateSettings($this->company_info,$key, $item);
         }
 
         return 'Settings Saved Successfully';

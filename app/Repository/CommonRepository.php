@@ -42,9 +42,9 @@ class CommonRepository implements CommonInterface
 
 
 
-    public function updateSettings($key, $value)
+    public function updateSettings(Model $model, $key, $value)
     {
-        $settings = Settings::firstOrNew(['key' =>  $key]);
+        $settings = $model->firstOrNew(['key' =>  $key]);
         $settings->value = $value;
         $settings->save();
 

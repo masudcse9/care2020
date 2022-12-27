@@ -9,7 +9,7 @@ interface CommonInterface
 {
     public function indexWithPagination(Model $model, $pagination);
 
-    public function updateSettings($key, $value);
+    public function updateSettings(Model $model, $key, $value);
 
     public function commonFind(Model $model, $id);
 
